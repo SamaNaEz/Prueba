@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "2ac4765a-4e3c-4759-9e64-b5369920e3f0",
+		"name": "Platimex Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Client By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.linos2508.com:4444/manage/Leads?action=ById&id=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"linos2508",
+						"com"
+					],
+					"port": "4444",
+					"path": [
+						"manage",
+						"Leads"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "ById"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Clients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.linos2508.com:4444/manage/Leads?action=All",
+					"protocol": "https",
+					"host": [
+						"api",
+						"linos2508",
+						"com"
+					],
+					"port": "4444",
+					"path": [
+						"manage",
+						"Leads"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "All"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Client",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idClient\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.linos2508.com:4444/manage/Leads",
+					"protocol": "https",
+					"host": [
+						"api",
+						"linos2508",
+						"com"
+					],
+					"port": "4444",
+					"path": [
+						"manage",
+						"Leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idClient\": 1,\r\n    \"firstName\": \"Platimex\",\r\n    \"lastName\": \"Sofware Solutions\",\r\n    \"phoneNumber\": \"5572037160\",\r\n    \"email\": \"edgar.pozadas@platimex.com.mx\",\r\n    \"age\": \"25\",\r\n    \"leadStatus\": \"1\",\r\n    \"street\": \"Insurgentes Sur 105\",\r\n    \"aditionalInformation\": \"Piso 12\",\r\n    \"city\": \"CDMX\",\r\n    \"state\": \"CDMX\",\r\n    \"zipCode\": \"06300\",\r\n    \"country\": \"MX\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.linos2508.com:4444/manage/Leads",
+					"protocol": "https",
+					"host": [
+						"api",
+						"linos2508",
+						"com"
+					],
+					"port": "4444",
+					"path": [
+						"manage",
+						"Leads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Development\",\r\n    \"lastName\": \"Python\",\r\n    \"phoneNumber\": \"5572037160\",\r\n    \"email\": \"edgar.pozadas@platimex.com.mx\",\r\n    \"age\": \"22\",\r\n    \"leadStatus\": \"2\",\r\n    \"street\": \"Insurgentes Sur 105\",\r\n    \"aditionalInformation\": \"Piso 12\",\r\n    \"city\": \"CDMX\",\r\n    \"state\": \"CDMX\",\r\n    \"zipCode\": \"06300\",\r\n    \"country\": \"MX\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.linos2508.com:4444/manage/Leads",
+					"protocol": "https",
+					"host": [
+						"api",
+						"linos2508",
+						"com"
+					],
+					"port": "4444",
+					"path": [
+						"manage",
+						"Leads"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
